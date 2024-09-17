@@ -1,0 +1,510 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+/* MENU */
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 211, 226);
+}
+
+.contenedor .card{
+    background-color: white;
+    height: 42rem;
+    min-width: 23rem;
+    max-width: 23rem;
+    border-radius: 2.3rem;
+    position: relative;
+}
+
+/* MENU -- HEADER */
+
+.contenedor .card .menu-header{
+    height: 15%;
+    width: 100%;
+    border-radius: 2.5rem 2.5rem 0 0;
+    display: flex;
+    align-items: center;
+    padding: .7rem .7rem 0 .7rem;
+}
+
+.contenedor .card .menu-header .icono, .titulo{
+    font-size: 1.7em;
+}
+
+.contenedor .card .menu-header .titulo{
+    margin-left: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* MENU -- MAIN */
+
+.contenedor .card .menu-main{
+    min-height: 62%;
+    max-height: 62%;
+    overflow-y: scroll;
+}
+/* 
+main::-webkit-scrollbar{
+    display: none;
+} */
+
+.contenedor .card .menu-main .producto{
+    height: 7rem;
+    padding: .5rem;
+    display: flex;
+}
+
+.contenedor .card .menu-main .producto .producto-imagen{
+    height: 100%;
+    width: 25%;
+}
+
+.contenedor .card .menu-main .producto .centrado{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .3rem;
+}
+
+.contenedor .card .menu-main .producto .imagen1{
+    height: 100%;
+    background-image: url(../img/imagen1.png);
+}
+
+.contenedor .card .menu-main .producto .imagen2{
+    height: 100%;
+    background-image: url(../img/imagen2.png);
+}
+
+.contenedor .card .menu-main .producto .imagen3{
+    height: 100%;
+    background-image: url(../img/imagen3.png);
+}
+
+.contenedor .card .menu-main .producto .imagen4{
+    height: 100%;
+    background-image: url(../img/imagen4.png);
+}
+
+
+.contenedor .card .menu-main .producto .producto-caracteristica{
+    width: 75%;
+    margin-left: 1rem;
+}
+
+.contenedor .card .menu-main .producto .producto-caracteristica .producto-informacion-superior{
+    height: 50%;
+}
+
+.contenedor .card .menu-main .producto .producto-caracteristica .producto-informacion-superior h2{
+    font-size: 1rem;
+    padding: .5rem 0 .5rem 0;
+    color: rgb(65, 65, 65);
+}
+
+.contenedor .card .menu-main .producto .producto-caracteristica .producto-informacion-superior .talle-color{
+    padding: 0 0 .5rem 0;
+    font-size: .8em;
+    display: flex;
+    gap: .5rem;
+    color: gray;
+}
+
+.contenedor .card .menu-main .producto .producto-caracteristica .producto-informacion-inferior{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor .card .menu-main .producto .producto-caracteristica .producto-informacion-inferior .precio{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenedor .card .menu-main .producto .producto-caracteristica .producto-informacion-inferior .cantidad{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: .8em;
+}
+
+.contenedor .card .menu-main .producto .producto-caracteristica .producto-informacion-inferior .cantidad .cantidad-central{
+    background-color: rgb(231, 231, 231);
+    padding: 0 .5rem 0 .5rem;
+    border-radius: .2rem;
+}
+
+.contenedor .card .menu-main .producto .producto-caracteristica .producto-informacion-inferior .cantidad button{
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    background: none;
+}
+
+.contenedor .card .menu-main .producto .producto-caracteristica .producto-informacion-inferior .cantidad button:hover{
+    cursor: pointer;
+}
+
+/* MENU -- FOOTER */
+
+.contenedor .card .menu-footer{
+    height: 23%;
+    width: 100%;
+    border-radius: 0 0 2.5rem 2.5rem;
+    padding:  1.2rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.contenedor .card .menu-footer .cantidad-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45%;
+}
+
+.contenedor .card .menu-footer .cantidad-total .izquierda{
+    font-size: 1.3em;
+}
+
+.contenedor .card .menu-footer .boton-comprar{
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .card .menu-footer .boton-comprar button{
+    height: 2.8rem;
+    width: 100%;
+    border-radius: .5rem;
+    border: none;
+    background: linear-gradient(45deg, rgb(0, 195, 255), rgb(0, 47, 255));
+    box-shadow: 7px 7px 12px 0 rgba(0, 81, 255, 0.3);
+    color: white;
+}
+
+/* PRENDA */
+
+.contenedor .card .prenda-header{
+    height: 55%;
+    border-radius: 2.3rem;
+    position: relative;
+}
+
+.contenedor .card .prenda-header .imagen4{
+    height: 100%;
+    background-image: url(../img/imagen4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2.3rem;
+}
+
+.contenedor .card .prenda-header .box-superior{
+    position: absolute;
+    top: 20px;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor .card .prenda-header .box-superior .icono{
+    padding: 0 1rem 0 1rem;
+    font-size: 1.5em;
+    color: white;
+}
+
+.contenedor .card .prenda-main{
+    height: 35%;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.contenedor .card .prenda-main .detalles{
+    height: 33%;
+}
+
+.contenedor .card .prenda-main .detalles h1{
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor .card .prenda-main .detalles .precio{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contenedor .card .prenda-main .detalles .precio .actual{
+    font-size: 1.7em;
+}
+
+.contenedor .card .prenda-main .detalles .precio .anterior{
+    color: gray;
+}
+
+.contenedor .card .prenda-main .color{
+    height: 33%;
+    margin-top: 1rem;
+}
+
+.contenedor .card .prenda-main .color p{
+    color: rgb(36, 36, 36);
+}
+
+/* COLORES */
+.negro{
+    background-color: black;
+}
+.blanco{
+    background-color: white;
+}
+.rojo{
+    background-color: red;
+}
+.violeta{
+    background-color: indigo;
+}
+.azul{
+    background-color: rgba(0, 102, 255, 0.61);
+}
+
+
+.contenedor .card .prenda-main .color .producto{
+    height: 3rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.contenedor .card .prenda-main .color .producto .sel_color{
+        display: flex;
+        gap: 1.5rem;
+}
+
+.contenedor .card .prenda-main .color .producto .sel_color li{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    list-style: none;
+}
+
+.contenedor .card .prenda-main .color .producto .sel_color li:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    border: solid 1px #1f1f1f;
+}
+
+.contenedor .card .prenda-main .talle p{
+    color: rgb(36, 36, 36);   
+}
+
+.contenedor .card .prenda-main .talle .tamanio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+}
+
+.contenedor .card .prenda-main .talle .tamanio button{
+    height: 60%;
+    width: 5rem;
+    border: none;
+    outline: none;
+    color: gray;
+}
+
+.contenedor .card .prenda-main .talle .tamanio button:hover{
+    cursor: pointer;
+}
+
+.contenedor .card .prenda-main .talle .tamanio button.active{
+    color: white;
+    border: none;
+    height: 80%;
+    width: 3rem;    
+    background: linear-gradient(45deg, rgb(0, 195, 255), rgb(0, 47, 255));
+    box-shadow: 7px 7px 12px 0 rgba(0, 81, 255, 0.3);
+}
+
+.contenedor .card .prenda-footer{
+    height: 10%;
+
+}
+
+.contenedor .card .prenda-footer .boton-comprar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .card .prenda-footer .boton-comprar button{
+    height: 2.8rem;
+    width: 80%;
+    border-radius: .5rem;
+    border: none;
+    background: linear-gradient(45deg, rgb(0, 195, 255), rgb(0, 47, 255));
+    box-shadow: 7px 7px 12px 0 rgba(0, 81, 255, 0.3);
+    color: white;
+}
+
+/* PAGINA PRINCIPAL */
+
+.contenedor .card .principal-header{
+    height: 50%;
+    border-radius: 2.3rem;
+    position: relative;
+}
+
+.contenedor .card .principal-header .imagen4{
+    height: 90%;
+    background-image: url(../img/imagen4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2.3rem;
+}
+
+.contenedor .card .principal-header .box-superior{
+    position: absolute;
+    top: 2.5rem;
+    height: 2.5rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem 0 1rem;
+    background-color: rgba(235, 235, 235, 0.301);
+    border-radius: .5rem;
+
+}
+
+.contenedor .card .principal-header .box-superior input{
+    height: 100%;
+    width: 80%;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgb(224, 224, 224);
+}
+
+.contenedor .card .principal-header .box-superior .icono{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(231, 231, 231);
+}
+
+.contenedor .card .principal-header .box-inferior{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    top: 12rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.contenedor .card .principal-header .box-inferior p{
+    color: rgb(184, 184, 184);
+    font-size: .8em;
+}
+
+.contenedor .card .principal-header .box-inferior h1{
+    color: white;
+    font-size: 1.9em;
+}
+
+.contenedor .card .principal-header .box-inferior .precio{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contenedor .card .principal-header .box-inferior .precio .actual{
+    font-size: 1em;
+    color: rgb(0, 153, 255);
+}
+
+.contenedor .card .principal-header .box-inferior .precio .anterior{
+    color: gray;
+    font-size: 1.2em;
+}
+
+
+.contenedor .card .principal-header .producto{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .card .principal-header .producto .sel_color{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .card .principal-header .producto .sel_color li{
+    height: .6rem;
+    width: .6rem;
+    border-radius: 50%;
+    list-style: none;
+}
+
+
+.contenedor .card .principal-header .producto .sel_color li:hover{
+    cursor: pointer;
+}
+
+.contenedor .card .principal-header .producto .sel_color li.active{
+    border: none;
+    width: 1rem; 
+    height: 1rem;
+}
+
+.contenedor .card .principal-main{
+    height: 50%;
+    padding: 1rem;
+}
+
+.contenedor .card .principal-main .main-superior{
+    background-color: cadetblue;
+    height: 55%;
+}
+
+.contenedor .card .principal-main .main-inferior{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contenedor .card .principal-main .main-inferior .box{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: violet;
+    border-radius: .5rem;
+}
